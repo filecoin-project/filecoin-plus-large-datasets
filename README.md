@@ -27,8 +27,6 @@ If you are a client who is interested in applying for a large DataCap allocation
 
 ## Applying for a large DataCap allocation
 
-**Current status: initial implementation and testing**
-
 Application flow: 
 
 1. Client submits an application through creating a GitHub issue in this repo
@@ -44,3 +42,6 @@ After this, the client can update the issue asking for (additional) allocations 
 - Third allocation onwards: lesser of 20% of total DataCap request or 200% of weekly allocation rate
 
 
+## Current status
+
+New applications are being accepted at this time, though please expect that the process will likely have some issues as we continue to test and improve the functionality of the process.
