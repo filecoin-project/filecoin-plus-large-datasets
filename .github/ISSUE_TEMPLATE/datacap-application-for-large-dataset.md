@@ -13,7 +13,7 @@ To apply as a large client, please fill out the following form.
 ## Core Information
 - Organization Name: 
 - Website / Social Media:
-- * Total amount of DataCap being requested (between 500 TiB and 5 PiB):
+- Total amount of DataCap being requested (between 500 TiB and 5 PiB):
 - On-chain address for first allocation:
 
 _Please respond to the questions below in pargraph form, replacing the text saying "Please answer here". Include as much detail as you can in your answer!_
