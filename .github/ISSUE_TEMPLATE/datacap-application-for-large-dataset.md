@@ -8,7 +8,7 @@ assignees: ''
 ---
 # Large Dataset Notary Application
 
-To apply as a large client, please fill out the following form. 
+To apply for a DataCap allocation for your dataset, please fill out the following information.
 
 ## Core Information
 - Organization Name: 
