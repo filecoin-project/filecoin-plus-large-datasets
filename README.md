@@ -41,7 +41,23 @@ After this, the client can update the issue asking for (additional) allocations 
 - Second allocation: lesser of 10% of total DataCap requested or 100% of weekly allocation rate
 - Third allocation onwards: lesser of 20% of total DataCap request or 200% of weekly allocation rate
 
+### Granting DataCap to the client
+Specifically, once the client asks for additional DataCap to be granted - in the form of a comment on their application issue, the lead Notary is responsible for pasting in a message of the following format:
 
+```
+## DataCap Allocation requested
+#### Multisig Notary address
+> <addr1>
+#### Client address
+> <addr2>
+#### DataCap allocation requested
+> XTiB
+```
+
+This kicks off a proposal to the multisig Notary to grant the associated amount of DataCap to the <addr2> client address. Other notaries will now see this in the Filecoin Plus Registry app where they can approve or decline the request. 
+  
+All notaries signing onto the multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
+  
 ## Current status
 
 New applications are being accepted at this time, though please expect that the process will likely have some issues as we continue to test and improve the functionality of the process.
