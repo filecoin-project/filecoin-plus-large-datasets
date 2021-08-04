@@ -56,6 +56,9 @@ Specifically, once the client asks for additional DataCap to be granted - in the
 
 This kicks off a proposal to the multisig Notary to grant the associated amount of DataCap to the <addr2> client address. Other notaries will now see this in the Filecoin Plus Registry app where they can approve or decline the request. 
   
+In order to approve the request in the [Fil+ Registry App](https://plus.fil.org/), Notaries need to sign in using the **Organization** option, specifying the multisig address for the LDN application in the _Multisig address) field. ![image](https://user-images.githubusercontent.com/2343218/128241146-75080e52-260b-4831-86be-b9a72ad7188f.png)
+
+  
 All notaries signing onto the multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
   
 ## Current status
