@@ -8,15 +8,16 @@ assignees: ''
 ---
 # Large Dataset Notary Application
 
-To apply for a DataCap allocation for your dataset, please fill out the following information.
+To apply for DataCap to onboard your dataset to Filecoin, please fill out the following.
 
 ## Core Information
 - Organization Name: 
 - Website / Social Media:
 - Total amount of DataCap being requested (between 500 TiB and 5 PiB):
+- Weekly allocation of DataCap requested (usually between 1-100TiB):
 - On-chain address for first allocation:
 
-_Please respond to the questions below in pargraph form, replacing the text saying "Please answer here". Include as much detail as you can in your answer!_
+_Please respond to the questions below by replacing the text saying "Please answer here". Include as much detail as you can in your answer._
 
 ## Project details
 
@@ -47,7 +48,7 @@ Where was the data in this dataset sourced from?
 Please answer here.
 ```
 
-Can you share a sample of what is in the dataset? A link to a file, an image, a table, etc., are good examples of this. 
+Can you share a sample of the data? A link to a file, an image, a table, etc., are good ways to do this. 
 ```
 Please answer here.
 ```
@@ -62,34 +63,35 @@ What is the expected retrieval frequency for this data?
 Please answer here.
 ```
 
-For how long do you plan to keep this dataset stored on Filecoin? Will this be a permanent archival or a one-time storage deal?
+For how long do you plan to keep this dataset stored on Filecoin?
 ```
 Please answer here.
 ```
+
 
 ## DataCap allocation plan
 
-In which geographies do you plan on making storage deals?
+In which geographies (countries, regions) do you plan on making storage deals?
 ```
 Please answer here.
 ```
 
-What is your expected data onboarding rate? How many deals can you make in a day, in a week? How much DataCap do you plan on using per day, per week?
+How will you be distributing your data to storage providers? Is there an offline data transfer process?
 ```
 Please answer here.
 ```
 
-How will you be distributing your data to miners? Is there an offline data transfer process?
+How do you plan on choosing the storage providers with whom you will be making deals? This should include a plan to ensure the data is retrievable in the future both by you and others.
 ```
 Please answer here.
 ```
 
-How do you plan on choosing the miners with whom you will be making deals? This should include a plan to ensure the data is retrievable in the future both by you and others.
+How will you be distributing deals across storage providers?
 ```
 Please answer here.
 ```
 
-How will you be distributing data and DataCap across miners storing data?
+Do you have the resources/funding to start making deals as soon as you receive DataCap? What support from the community would help you onboard onto Filecoin?
 ```
 Please answer here.
 ```
