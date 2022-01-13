@@ -30,19 +30,21 @@ If you are a client who is interested in applying for a large DataCap allocation
 Application flow: 
 
 1. Client submits an application through creating a GitHub issue in this repo
-1. Notaries and community members carry out due diligence over a 2 week period via comments on the issue and in conversation during a Notary Governance call
-1. If the community is in agreement that the dataset is in line with the values of the Filecoin Plus program and should be approved for a DataCap allocation. 7 Notaries opt into being signers on the multi-sig Notary (also known as the Large Dataset Notary - LDN), which will serve as a dedicated DataCap faucet for this specific client. At least 3 regions should be represented by this set of Notaries
-1. A "lead" Notary is elected to serve as the primary point of contact for the client and as the responsible Notary for ensuring that the client's actions are aligned with the plan outlined in their application. The issue is assigned to this Notary
-1. The multi-sig Notary is configured, the Root Key Holders are requested to approve the new Notary and sign this onto the chain 
+2. Automation + the Fil+ governance team ensures that the application has been fully filled out, and a request is sent to the RKH to set up a Notary (LDN) for this client
+3. Notaries and community members carry out due diligence via comments on the issue and in conversation during a Notary Governance call
+4. In parallel, RKH are informed of the client application request and approve the multisig LDN to allocate DataCap to this client in tranches
+6. If the community is in agreement that the dataset is in line with the values of the Filecoin Plus program and should be approved for a DataCap allocation, 2 notaries approve the request to allocate the first tranche of DataCap
 
-After this, the client can update the issue asking for (additional) allocations of DataCap. Clients need to have used up > 90% of the prior DataCap allocation before requesting for additional DataCap. The group of Notaries signing onto the LDN have access to Fil+ data required to continue allocating more DataCap, to verify that the client is operating in good faith, in accordance with the principles of the program, and in line with their allocation strategy outlined in the original application. DataCap call be allocated per the following limitations:
+When clients use up > 75% of the prior DataCap allocation a request for additional DataCap in the form of the next tranche is automatically kicked off. Notaries have access to on-chain data required to verify that the client is operating in good faith, in accordance with the principles of the program, and in line with their allocation strategy outlined in the original application. 2 notaries need to approve the next tranche of DataCap to be allocated to the client. Notaries cannot sign off on subsequent allocations of DataCap, i.e., you need at minimum 4 notaries to support your application on an ongoing basis to receive multiple tranches of DataCap. 
+
+DataCap call be allocated per the following limitations:
 
 - First allocation: lesser of 5% of total DataCap requested or 50% of weekly allocation rate
 - Second allocation: lesser of 10% of total DataCap requested or 100% of weekly allocation rate
 - Third allocation onwards: lesser of 20% of total DataCap request or 200% of weekly allocation rate
 
 ### Granting DataCap to the client
-Specifically, once the client asks for additional DataCap to be granted - in the form of a comment on their application issue, the lead Notary is responsible for pasting in a message of the following format:
+The bot will post a comment with the following structure to kick off a request for DataCap allocation:
 
 ```
 ## DataCap Allocation requested
@@ -54,13 +56,13 @@ Specifically, once the client asks for additional DataCap to be granted - in the
 > XTiB
 ```
 
-This kicks off a proposal to the multisig Notary to grant the associated amount of DataCap to the <addr2> client address. Other notaries will now see this in the Filecoin Plus Registry app where they can approve or decline the request. 
+This initiates a proposal to the multisig Notary to grant the associated amount of DataCap to the <addr2> client address. Other notaries will now see this in the Filecoin Plus Registry app where they can approve or decline the request. 
   
 In order to approve the request in the [Fil+ Registry App](https://plus.fil.org/), Notaries need to sign in using the **Organization** option, specifying the multisig address for the LDN application in the _Multisig address) field. ![image](https://user-images.githubusercontent.com/2343218/128241146-75080e52-260b-4831-86be-b9a72ad7188f.png)
 
 **Note: if you are signing in to approve multiple LDN client requests, you'll have to sign out of the app and re-sign in (or close and re-open) with each approval to be signed, ensuring that you are signing in with the right multisig for that client in the organization field.** 
   
-All notaries signing onto the multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
+All notaries signing onto the LDN multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
   
 ## Current status
 
