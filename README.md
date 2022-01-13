@@ -14,7 +14,7 @@ The process outlined below for clients looking to apply for a large amount of Da
 Based on the conversation in [Issue #94](https://github.com/filecoin-project/notary-governance/issues/94) and in Fil+ Governance calls, here is the current definition of the scope of the program. Please note that this is still an evolving conversation, so the scope is subject to change in the coming weeks and months. If you would like to participate in this conversation or have feedback, please join the discussion in the parent Issue. 
 
 Clients can currently apply for a **Large Dataset Notary** which can grant them between 500 TiB and 5 PiB of DataCap. Support for DataCap allocations for 
-sets through the process outlined and managed through this repo is being run as an initial experiment, for up to a total of 50 PiB of DataCap to be allocated. 
+sets through the process outlined and managed through this repo is still in early experimental phases, expect changes to the process.
 
 In order for a client and their dataset to be eligible for the request allocation: 
 
