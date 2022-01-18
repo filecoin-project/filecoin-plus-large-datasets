@@ -11,17 +11,17 @@ The process outlined below for clients looking to apply for a large amount of Da
 
 ## Current scope
 
-Based on the conversation in [Issue #94](https://github.com/filecoin-project/notary-governance/issues/94) and in Fil+ Governance calls, here is the current definition of the scope of the program. Please note that this is still an evolving conversation, so the scope is subject to change in the coming weeks and months. If you would like to participate in this conversation or have feedback, please join the discussion in the parent Issue. 
+Based on conversations in various issues and governance calls, here is the current scope of the Large Dataset Notary (LDN) program. You can find relevant issues, as well as links to governance call recordings in the [Notary Governance repo](https://github.com/filecoin-project/notary-governance). Please note that this is still an evolving conversation, so the scope is subject to change. If you would like to participate in this conversation or have feedback, please let us know! You can start a discussion topic in the [Notary Governance repo](https://github.com/filecoin-project/notary-governance/discussions), in the [fil-plus](https://filecoinproject.slack.com/archives/C01DLAPKDGX) public Slack channel, or in an upcoming [Governance call](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
 Clients can currently apply for a **Large Dataset Notary** which can grant them between 500 TiB and 5 PiB of DataCap. Support for DataCap allocations for 
 sets through the process outlined and managed through this repo is still in early experimental phases, expect changes to the process.
 
-In order for a client and their dataset to be eligible for the request allocation: 
+In order for a client and their dataset to be eligible: 
 
 - the dataset should be public, open, and mission aligned with Filecoin and Filecoin Plus. This also means that the data should be accessible to anyone in the network, without requiring any special permissions or access requirement
 - stored data should be readily retrievable on the network and this should be regularly verified (though the use of manual or automated verification that includes retrieving data from various miners over the course of the DataCap allocation timeframe)
 - there should be no open disputes in the Fil+ ecosystem against the client during the time that the application is open for review
-- a single dataset can only be eligible for a single active Large Dataset Notary 
+- a single dataset can only be eligible for a single active Large Dataset Notary (some special circumstances and exceptions, such as Slingshot program)
 
 If you are a client who is interested in applying for a large DataCap allocation via an LDN, please see the steps outlined below.
 
@@ -35,13 +35,16 @@ Application flow:
 4. In parallel, RKH are informed of the client application request and approve the multisig LDN to allocate DataCap to this client in tranches
 6. If the community is in agreement that the dataset is in line with the values of the Filecoin Plus program and should be approved for a DataCap allocation, 2 notaries approve the request to allocate the first tranche of DataCap
 
-When clients use up > 75% of the prior DataCap allocation a request for additional DataCap in the form of the next tranche is automatically kicked off. Notaries have access to on-chain data required to verify that the client is operating in good faith, in accordance with the principles of the program, and in line with their allocation strategy outlined in the original application. 2 notaries need to approve the next tranche of DataCap to be allocated to the client. Notaries cannot sign off on subsequent allocations of DataCap, i.e., you need at minimum 4 notaries to support your application on an ongoing basis to receive multiple tranches of DataCap. 
+When clients use up > 75% of the prior DataCap allocation, a request for additional DataCap in the form of the next tranche is automatically kicked off ('subsequent allocation bot'). Notaries have access to on-chain data required to verify that the client is operating in good faith, in accordance with the principles of the program, and in line with their allocation strategy outlined in the original application. 2 notaries need to approve the next tranche of DataCap to be allocated to the client. The same notary cannot sign off on immediately subsequent allocations of DataCap, i.e., you need at minimum 4 notaries to support your application on an ongoing basis to receive multiple tranches of DataCap. 
 
-DataCap call be allocated per the following limitations:
+## DataCap allocation calculations
 
 - First allocation: lesser of 5% of total DataCap requested or 50% of weekly allocation rate
 - Second allocation: lesser of 10% of total DataCap requested or 100% of weekly allocation rate
-- Third allocation onwards: lesser of 20% of total DataCap request or 200% of weekly allocation rate
+- Third allocation: lesser of 20% of total DataCap request or 200% of weekly allocation rate
+- Fourth allocation: lesser of 40% of total DataCap requested or 400% of weekly allocation rate
+- Fifth allocation onwards: lesser of 80% of total DataCap request or 800% of weekly allocation rate
+
 
 ### Granting DataCap to the client
 The bot will post a comment with the following structure to kick off a request for DataCap allocation:
@@ -58,9 +61,7 @@ The bot will post a comment with the following structure to kick off a request f
 
 This initiates a proposal to the multisig Notary to grant the associated amount of DataCap to the <addr2> client address. Other notaries will now see this in the Filecoin Plus Registry app where they can approve or decline the request. 
   
-In order to approve the request in the [Fil+ Registry App](https://plus.fil.org/), Notaries need to sign in using the **Organization** option, specifying the multisig address for the LDN application in the _Multisig address) field. ![image](https://user-images.githubusercontent.com/2343218/128241146-75080e52-260b-4831-86be-b9a72ad7188f.png)
-
-**Note: if you are signing in to approve multiple LDN client requests, you'll have to sign out of the app and re-sign in (or close and re-open) with each approval to be signed, ensuring that you are signing in with the right multisig for that client in the organization field.** 
+  In order to approve the request in the [Fil+ Registry App](https://plus.fil.org/), Notaries need to sign in with their Ledger. During this initial authorization, the app will check if the Ledger address is an approved signer on the large dataset multisig notary addresses (previously, the Organization). Notaries can then action and sign multiple large requests in a row, without needing to re-auth for each multisig.
   
 All notaries signing onto the LDN multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
   
