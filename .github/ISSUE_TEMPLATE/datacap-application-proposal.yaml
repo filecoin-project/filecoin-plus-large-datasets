@@ -139,13 +139,13 @@ body:
   validations:
     required: true
 - type: textarea
-  id: sps
+  id: distribution
   attributes:
     label: How will you be distributing deals across storage providers?
   validations:
     required: true
 - type: textarea
-  id: sps
+  id: timeline
   attributes:
     label: Do you have the resources/funding to start making deals as soon as you receive DataCap? What support from the community would help you onboard onto Filecoin?
   validations:
