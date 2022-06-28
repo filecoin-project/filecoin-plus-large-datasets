@@ -2,7 +2,6 @@ name: Large Dataset Notary - DataCap application
 description: Clients should use this application form to request a DataCap allocation via the LDN process for a dataset
 title: "[DataCap Application] <Organization> - <Project Name>"
 labels: 'application, Phase: Diligence'
-assignees: ''
 body:
 - type: markdown
   attributes:
