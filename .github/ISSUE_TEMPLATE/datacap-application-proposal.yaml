@@ -112,7 +112,7 @@ body:
   validations:
     required: true
 - type: textarea
-  id: retrieval
+  id: length
   attributes:
     label: For how long do you plan to keep this dataset stored on Filecoin?
   validations:
