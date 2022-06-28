@@ -16,28 +16,28 @@ body:
 - type: input
   id: name
   attributes:
-    label: Organization Name: 
+    label: Organization Name
     placeholder: "What is the name of the organization applying to store data on the Filecoin Network?"
   validations:
     required: true
 - type: input
   id: website
   attributes:
-    label: Website / Social Media:
+    label: Website / Social Media
     placeholder: "Links to websites, social media accounts, etc."
   validations:
     required: true
 - type: input
   id: datacap
   attributes:
-    label: Total amount of DataCap being requested:
+    label: Total amount of DataCap being requested
     placeholder: "Between 500 TiB and 5 PiB"
   validations:
     required: true
 - type: input
   id: weekly-rate
   attributes:
-    label: Weekly allocation of DataCap requested:
+    label: Weekly allocation of DataCap requested
     placeholder: "usually between 1-300TiB"
   validations:
     required: true
