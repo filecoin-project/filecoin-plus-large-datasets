@@ -44,7 +44,7 @@ body:
 - type: input
   id: address
   attributes:
-    label: On-chain address for first allocation:
+    label: On-chain address for first allocation
     placeholder: "begins with an f1.. or f3.."
   validations:
     required: true
