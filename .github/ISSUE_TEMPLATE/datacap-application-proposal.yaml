@@ -78,12 +78,6 @@ body:
     label: What other projects/ecosystem stakeholders is this project associated with?
   validations:
     required: true
-- type: textarea
-  id: stakeholders
-  attributes:
-    label: What other projects/ecosystem stakeholders is this project associated with?
-  validations:
-    required: true
 - type: markdown
   attributes:
    value: "## Use-case details"
