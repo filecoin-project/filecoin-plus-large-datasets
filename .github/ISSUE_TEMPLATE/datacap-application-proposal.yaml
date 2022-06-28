@@ -1,0 +1,146 @@
+name: Large Dataset Notary - DataCap application
+description: Clients should use this application form to request a DataCap allocation via the LDN process for a dataset
+title: "[DataCap Application] <Organization> - <Project Name>"
+labels: 'application, Phase: Diligence'
+body:
+- type: markdown
+  attributes:
+   value: "# Large Dataset Notary Application"
+- type: markdown
+  attributes:
+   value: "To apply for DataCap to onboard your dataset to Filecoin, please fill out the following."
+- type: markdown
+  attributes:
+   value: "## Core Information"
+- type: input
+  id: name
+  attributes:
+    label: Organization Name
+    placeholder: "What is the name of the organization applying to store data on the Filecoin Network?"
+  validations:
+    required: true
+- type: input
+  id: website
+  attributes:
+    label: Website / Social Media
+    placeholder: "Links to websites, social media accounts, etc."
+  validations:
+    required: true
+- type: input
+  id: datacap
+  attributes:
+    label: Total amount of DataCap being requested
+    placeholder: "Between 500 TiB and 5 PiB"
+  validations:
+    required: true
+- type: input
+  id: weekly-rate
+  attributes:
+    label: Weekly allocation of DataCap requested
+    placeholder: "usually between 1-300TiB"
+  validations:
+    required: true
+- type: input
+  id: address
+  attributes:
+    label: On-chain address for first allocation
+    placeholder: "begins with an f1.. or f3.."
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Is the data being onboarded public or private?
+    options:
+    - label: the data is unencrypted and retrievable by anyone
+    - label: the data is unencrypted but not retrievable 
+    - label: the data is encrypted and retrievable by anyone
+    - label: the data is encrypted but not retrievable
+      required: true
+- type: markdown
+  attributes:
+   value: "## Project details"
+- type: textarea
+  id: history
+  attributes:
+    label: Share a brief history of your project and organization.
+  validations:
+    required: true
+body:
+- type: textarea
+  id: funding
+  attributes:
+    label: What is the primary source of funding for this project?
+  validations:
+    required: true
+- type: textarea
+  id: stakeholders
+  attributes:
+    label: What other projects/ecosystem stakeholders is this project associated with?
+  validations:
+    required: true
+- type: markdown
+  attributes:
+   value: "## Use-case details"
+- type: textarea
+  id: dataset
+  attributes:
+    label: Describe the data being stored onto Filecoin
+  validations:
+    required: true
+- type: textarea
+  id: source
+  attributes:
+    label: Where was the data in this dataset sourced from?
+  validations:
+    required: true
+- type: textarea
+  id: sample
+  attributes:
+    label: Can you share a sample of the data? A link to a file, an image, a table, etc., are good ways to do this. 
+  validations:
+    required: true
+- type: textarea
+  id: retrieval
+  attributes:
+    label: What is the expected retrieval frequency for this data? 
+  validations:
+    required: true
+- type: textarea
+  id: length
+  attributes:
+    label: For how long do you plan to keep this dataset stored on Filecoin?
+  validations:
+    required: true
+- type: markdown
+  attributes:
+   value: "## DataCap allocation plan"
+- type: textarea
+  id: geos
+  attributes:
+    label: In which geographies (countries, regions) do you plan on making storage deals?
+  validations:
+    required: true
+- type: textarea
+  id: transfer
+  attributes:
+    label: How will you be distributing your data to storage providers? Is there an offline data transfer process?
+  validations:
+    required: true
+- type: textarea
+  id: sps
+  attributes:
+    label: How do you plan on choosing the storage providers with whom you will be making deals? This should include a plan to ensure the data is retrievable in the future both by you and others.
+  validations:
+    required: true
+- type: textarea
+  id: distribution
+  attributes:
+    label: How will you be distributing deals across storage providers?
+  validations:
+    required: true
+- type: textarea
+  id: timeline
+  attributes:
+    label: Do you have the resources/funding to start making deals as soon as you receive DataCap? What support from the community would help you onboard onto Filecoin?
+  validations:
+    required: true
