@@ -217,12 +217,12 @@ body:
     label: If selected other/custom tool for making deal, enter the details here
   validations:
     required: false
-- type: checkboxes
+- type: dropdown
   attributes:
     label: Can you confirm that you will follow the Fil+ guideline
     description: clients should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap
     options:
-      - label: "Yes"
-      - label: "No"
+      - "Yes"
+      - "No"
   validations:
     required: true
