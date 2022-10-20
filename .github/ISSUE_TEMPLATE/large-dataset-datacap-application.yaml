@@ -51,8 +51,8 @@ body:
   attributes:
     label: Is this project associated with other projects/ecosystem stakeholders?
     options:
-      - Yes
-      - No
+      - "Yes"
+      - "No"
   validations:
     required: true
 - type: textarea
@@ -99,7 +99,7 @@ body:
     label: Confirm that this is a public dataset that can be retrieved by anyone on the Network
     description: i.e., no specific permissions or access rights are required to view the data
     options:
-      - I confirm
+      - label: I confirm
   validations:
     required: false
 - type: textarea
@@ -181,7 +181,7 @@ body:
     label: Can you confirm that you will follow the Fil+ guideline
     description: clients should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap
     options:
-      - Yes
-      - No
+      - label: "Yes"
+      - label: "No"
   validations:
     required: true
