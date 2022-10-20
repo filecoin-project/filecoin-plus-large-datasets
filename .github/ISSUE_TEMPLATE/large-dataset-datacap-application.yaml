@@ -7,7 +7,7 @@ body:
   attributes:
     value: |
       # Large Dataset Notary Application
-      To apply for DataCap to onboard your dataset to Filecoin, please fill out the following.
+      To apply for DataCap to onboard your dataset to Filecoin, please fill out the following form
 - type: markdown
   attributes:
     value: |
@@ -25,6 +25,7 @@ body:
 - type: input
   attributes:
     label: Total amount of DataCap being requested
+    description: The maximum amount allowed is 5 PiB
   validations:
     required: true
 - type: input
@@ -35,6 +36,7 @@ body:
 - type: input
   attributes:
     label: On-chain address for first allocation
+    description: Make sure the address exists on the chain
   validations:
     required: true
 - type: markdown
@@ -57,7 +59,7 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: If yes, what are the other projects/ecosystem stakeholders
+    label: If answered yes, what are the other projects/ecosystem stakeholders
     render: text
   validations:
     required: false
@@ -73,23 +75,39 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Where was the data in this dataset sourced from
+    label: Where was the data currently stored in this dataset sourced from
     options:
-      - AWS Public Dataset
-      - Google Cloud Public Dataset
-      - Azure Public Dataset
-      - Client's Storage Infrastructure
+      - AWS Cloud
+      - Google Cloud
+      - Azure Cloud
+      - My Own Storage Infra
       - Other
   validations:
     required: true
 - type: input
   attributes:
-    label: If other, enter the details here
+    label: If selected other, enter the details here
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: How do you plan to prepare the dataset
+    multiple: true
+    options:
+      - IPFS
+      - lotus
+      - singularity
+      - graphsplit
+      - I don't know yet
+      - others/custom tool
+- type: input
+  attributes:
+    label: If selected other/custom tool, enter the details here
   validations:
     required: false
 - type: textarea
   attributes:
-    label: Can you share a sample of the data
+    label: Please share a sample of the data
     description: A link to a file, an image, a table, etc., are good ways to do this.
     render: text
   validations:
@@ -104,7 +122,7 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: If you do not confirm, what is the reason
+    label: If you chose not to confirm, what was the reason
     render: text
   validations:
     required: false
@@ -161,6 +179,7 @@ body:
       - IPFS
       - Shipping hard drives
       - Lotus built-in data transfer
+      - I don't know yet
       - Others
   validations:
     required: true
@@ -173,9 +192,32 @@ body:
       - Filmine
       - Big data exchange
       - Partners
+      - I don't know yet
       - Others
   validations:
     required: true
+- type: input
+  attributes:
+    label: If you chose Others, what is the tool or platform you plan to use
+    render: text
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: How do you plan to make deals to your storage providers
+    multiple: true
+    options:
+      - Boost client
+      - Lotus client
+      - Bidbot
+      - Singularity
+      - I don't know yet
+      - Others/custom tool
+- type: input
+  attributes:
+    label: If selected other/custom tool, enter the details here
+  validations:
+    required: false
 - type: checkboxes
   attributes:
     label: Can you confirm that you will follow the Fil+ guideline
