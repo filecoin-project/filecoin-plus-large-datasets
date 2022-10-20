@@ -199,7 +199,6 @@ body:
 - type: input
   attributes:
     label: If you chose Others, what is the tool or platform you plan to use
-    render: text
   validations:
     required: false
 - type: dropdown
