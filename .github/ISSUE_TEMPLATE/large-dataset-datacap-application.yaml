@@ -86,7 +86,7 @@ body:
     required: true
 - type: input
   attributes:
-    label: If selected other, enter the details here
+    label: If you answered "Other" in the previous question, enter the details here
   validations:
     required: false
 - type: dropdown
