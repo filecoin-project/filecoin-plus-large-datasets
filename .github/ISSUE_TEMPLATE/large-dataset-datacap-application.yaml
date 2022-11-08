@@ -26,16 +26,12 @@ body:
       - Distributed or Decenralized Storage
       - Blockchain and Cryptocurrency
       - Web3 Builders/Researchers
-      - IoT (Internet of Things)
-      - NFT (Non-fungible Tokens)
-      - Financial Services
-      - Metaverse/GameFi
+      - IoT
+      - NFT
+      - DeFi
+      - Metaverse
+      - GameFi
       - Mining Operations/Hardware
-      - Web2 IT Software
-      - AI Technology
-      - Cloud Computation
-      - Telecommunication
-      - Gaming
   validations:
     required: true
 - type: input
@@ -222,8 +218,9 @@ body:
     label: If you answered "Others" in the previous question, what is the tool or platform you plan to use
   validations:
     required: false
-- type: input
+- type: textarea
   attributes:
+    render: text
     label: If you already have a list of storage providers to work with, fill out their names and provider IDs below
   validations:
     required: false
