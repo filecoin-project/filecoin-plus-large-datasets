@@ -19,7 +19,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Client Country/Region
+    label: Data owner Country/Region
     options:
       - Afghanistan
       - Åland Islands
@@ -274,7 +274,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Client Industry
+    label: Data owner Industry
     options:
       - Life Science / Healthcare
       - Arts & Recreation
@@ -296,7 +296,13 @@ body:
     required: true
 - type: input
   attributes:
-    label: Website / Social Media
+    label: Website
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Social Media
+    render: text
   validations:
     required: true
 - type: input
@@ -504,7 +510,7 @@ body:
 - type: dropdown
   attributes:
     label: Can you confirm that you will follow the Fil+ guideline
-    description: clients should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap
+    description: Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap
     options:
       - "Yes"
       - "No"
