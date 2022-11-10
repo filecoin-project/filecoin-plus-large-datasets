@@ -20,7 +20,6 @@ body:
 - type: dropdown
   attributes:
     label: Client Industry
-    multiple: true
     options:
       - Life Science / Healthcare
       - Arts & Recreation
