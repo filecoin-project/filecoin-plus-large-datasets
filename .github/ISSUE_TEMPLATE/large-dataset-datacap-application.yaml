@@ -19,19 +19,25 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Client Business Areas
+    label: Client Industry
     multiple: true
     options:
-      - Filecoin Ecosystem
-      - Distributed or Decenralized Storage
-      - Blockchain and Cryptocurrency
-      - Web3 Builders/Researchers
-      - IoT
-      - NFT
-      - DeFi
-      - Metaverse
-      - GameFi
-      - Mining Operations/Hardware
+      - Life Science / Healthcare
+      - Arts & Recreation
+      - Education & Training
+      - Environment
+      - Web3 / Crypto
+      - IT & Technology Services
+      - Professional Services (Legal, Consulting, Advising)
+      - Government
+      - Not-for-Profit
+      - Financial Services
+      - Utilities
+      - Resources, Agriculture & Fisheries
+      - Construction, Property & Real Estate
+      - Information, Media & Telecommunications
+      - Transport Services
+      - Other
   validations:
     required: true
 - type: input
@@ -48,7 +54,7 @@ body:
 - type: input
   attributes:
     label: Weekly allocation of DataCap requested
-    description: The acceptable range is 1 TiB to 1000 TiB
+    description: This amount is usually between 1 TiB and 1000 TiB
   validations:
     required: true
 - type: input
