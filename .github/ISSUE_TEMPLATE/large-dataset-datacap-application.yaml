@@ -469,7 +469,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: How do you plan to choose your Storage Providers
+    label: How do you plan to choose storage providers
     multiple: true
     options:
       - Slack
