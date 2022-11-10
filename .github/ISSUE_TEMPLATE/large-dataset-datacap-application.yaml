@@ -270,6 +270,8 @@ body:
       - Yemen
       - Zambia
       - Zimbabwe
+  validations:
+    required: true
 - type: dropdown
   attributes:
     label: Client Industry
