@@ -14,12 +14,12 @@ body:
       # Core Information
 - type: input
   attributes:
-    label: Organization Name
+    label: Data Owner Name
   validations:
     required: true
 - type: dropdown
   attributes:
-    label: Data owner Country/Region
+    label: Data Owner Country/Region
     options:
       - Afghanistan
       - Åland Islands
@@ -274,7 +274,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Data owner Industry
+    label: Data Owner Industry
     options:
       - Life Science / Healthcare
       - Arts & Recreation
