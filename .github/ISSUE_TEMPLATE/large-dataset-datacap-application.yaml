@@ -305,16 +305,40 @@ body:
     render: text
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Total amount of DataCap being requested
     description: The maximum amount allowed is 5 PiB
+    options:
+      - 500TiB
+      - 1PiB
+      - 2PiB
+      - 3PiB
+      - 4PiB
+      - 5PiB
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Weekly allocation of DataCap requested
     description: This amount is usually between 1 TiB and 1000 TiB
+    options:
+      - 10TiB
+      - 50TiB
+      - 100TiB
+      - 150TiB
+      - 200TiB
+      - 250TiB
+      - 300TiB
+      - 350TiB
+      - 400TiB
+      - 450TiB
+      - 500TiB
+      - 600TiB
+      - 700TiB
+      - 800TiB
+      - 900TiB
+      - 1PiB
   validations:
     required: true
 - type: input
@@ -323,6 +347,18 @@ body:
     description: Make sure the address exists on the chain
   validations:
     required: true
+- type: checkboxes
+  attributes:
+    label: Custom multisig 
+    description: Mark this checkbox if this client should use a specific multisig (for fil+ gov team).
+    options:
+      - label: "Use Custom Multisig"  
+- type: input
+  attributes:
+    label: Identifier
+    description: If needed Filecoin team will fill up this field later on. You can skip this field.
+  validations:
+    required: false   
 - type: markdown
   attributes:
     value: |
