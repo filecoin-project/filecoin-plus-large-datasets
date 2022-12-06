@@ -310,6 +310,10 @@ body:
     label: Total amount of DataCap being requested
     description: The maximum amount allowed is 5 PiB
     options:
+      - 100TiB
+      - 200TiB
+      - 300TiB
+      - 400TiB
       - 500TiB
       - 1PiB
       - 2PiB
