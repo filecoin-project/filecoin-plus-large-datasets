@@ -1,0 +1,554 @@
+name: Large Dataset Datacap Application
+description: Clients should use this application form to request a DataCap allocation via a LDN for a dataset
+title: "[DataCap Application] <Organization> - <Project Name>"
+labels: 'application, Phase: Diligence'
+body:
+- type: markdown
+  attributes:
+    value: |
+      # Large Dataset Notary Application
+      To apply for DataCap to onboard your dataset to Filecoin, please fill out the following form
+- type: markdown
+  attributes:
+    value: |
+      # Core Information
+- type: input
+  attributes:
+    label: Data Owner Name
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Data Owner Country/Region
+    options:
+      - Afghanistan
+      - Åland Islands
+      - Albania
+      - Algeria
+      - American Samoa
+      - Andorra
+      - Angola
+      - Anguilla
+      - Antarctica
+      - Antigua and Barbuda
+      - Argentina
+      - Armenia
+      - Aruba
+      - Australia
+      - Austria
+      - Azerbaijan
+      - Bahamas
+      - Bahrain
+      - Bangladesh
+      - Barbados
+      - Belarus
+      - Belgium
+      - Belize
+      - Benin
+      - Bermuda
+      - Bhutan
+      - Bolivia
+      - "Bonaire, Sint Eustatius and Saba"
+      - Bosnia and Herzegovina
+      - Botswana
+      - Bouvet Island
+      - Brazil
+      - British Indian Ocean Territory
+      - Brunei Darussalam
+      - Bulgaria
+      - Burkina Faso
+      - Burundi
+      - Cambodia
+      - Cameroon
+      - Canada
+      - Cape Verde
+      - Cayman Islands
+      - Central African Republic
+      - Chad
+      - Chile
+      - China
+      - Christmas Island
+      - Cocos (Keeling) Islands
+      - Colombia
+      - Comoros
+      - Congo
+      - "Congo, the Democratic Republic of the"
+      - Cook Islands
+      - Costa Rica
+      - Côte d'Ivoire
+      - Croatia
+      - Cuba
+      - Curaçao
+      - Cyprus
+      - Czech Republic
+      - Denmark
+      - Djibouti
+      - Dominica
+      - Dominican Republic
+      - Ecuador
+      - Egypt
+      - El Salvador
+      - Equatorial Guinea
+      - Eritrea
+      - Estonia
+      - Ethiopia
+      - Falkland Islands (Malvinas)
+      - Faroe Islands
+      - Fiji
+      - Finland
+      - France
+      - French Guiana
+      - French Polynesia
+      - French Southern Territories
+      - Gabon
+      - Gambia
+      - Georgia
+      - Germany
+      - Ghana
+      - Gibraltar
+      - Greece
+      - Greenland
+      - Grenada
+      - Guadeloupe
+      - Guam
+      - Guatemala
+      - Guernsey
+      - Guinea
+      - Guinea-Bissau
+      - Guyana
+      - Haiti
+      - Heard Island and McDonald Islands
+      - Holy See (Vatican City State)
+      - Honduras
+      - Hong Kong
+      - Hungary
+      - Iceland
+      - India
+      - Indonesia
+      - "Iran, Islamic Republic of"
+      - Iraq
+      - Ireland
+      - Isle of Man
+      - Israel
+      - Italy
+      - Jamaica
+      - Japan
+      - Jersey
+      - Jordan
+      - Kazakhstan
+      - Kenya
+      - Kiribati
+      - "Korea, Democratic People's Republic of"
+      - "Korea, Republic of"
+      - Kuwait
+      - Kyrgyzstan
+      - Lao People's Democratic Republic
+      - Latvia
+      - Lebanon
+      - Lesotho
+      - Liberia
+      - Libya
+      - Liechtenstein
+      - Lithuania
+      - Luxembourg
+      - Macao
+      - "Macedonia, the Former Yugoslav Republic of"
+      - Madagascar
+      - Malawi
+      - Malaysia
+      - Maldives
+      - Mali
+      - Malta
+      - Marshall Islands
+      - Martinique
+      - Mauritania
+      - Mauritius
+      - Mayotte
+      - Mexico
+      - "Micronesia, Federated States of"
+      - "Moldova, Republic of"
+      - Monaco
+      - Mongolia
+      - Montenegro
+      - Montserrat
+      - Morocco
+      - Mozambique
+      - Myanmar
+      - Namibia
+      - Nauru
+      - Nepal
+      - Netherlands
+      - New Caledonia
+      - New Zealand
+      - Nicaragua
+      - Niger
+      - Nigeria
+      - Niue
+      - Norfolk Island
+      - Northern Mariana Islands
+      - Norway
+      - Oman
+      - Pakistan
+      - Palau
+      - "Palestine, State of"
+      - Panama
+      - Papua New Guinea
+      - Paraguay
+      - Peru
+      - Philippines
+      - Pitcairn
+      - Poland
+      - Portugal
+      - Puerto Rico
+      - Qatar
+      - Réunion
+      - Romania
+      - Russian Federation
+      - Rwanda
+      - Saint Barthélemy
+      - "Saint Helena, Ascension and Tristan da Cunha"
+      - Saint Kitts and Nevis
+      - Saint Lucia
+      - Saint Martin (French part)
+      - Saint Pierre and Miquelon
+      - Saint Vincent and the Grenadines
+      - Samoa
+      - San Marino
+      - Sao Tome and Principe
+      - Saudi Arabia
+      - Senegal
+      - Serbia
+      - Seychelles
+      - Sierra Leone
+      - Singapore
+      - Sint Maarten (Dutch part)
+      - Slovakia
+      - Slovenia
+      - Solomon Islands
+      - Somalia
+      - South Africa
+      - South Georgia and the South Sandwich Islands
+      - South Sudan
+      - Spain
+      - Sri Lanka
+      - Sudan
+      - Suriname
+      - Svalbard and Jan Mayen
+      - Swaziland
+      - Sweden
+      - Switzerland
+      - Syrian Arab Republic
+      - Taiwan
+      - Tajikistan
+      - "Tanzania, United Republic of"
+      - Thailand
+      - Timor-Leste
+      - Togo
+      - Tokelau
+      - Tonga
+      - Trinidad and Tobago
+      - Tunisia
+      - Turkey
+      - Turkmenistan
+      - Turks and Caicos Islands
+      - Tuvalu
+      - Uganda
+      - Ukraine
+      - United Arab Emirates
+      - United Kingdom
+      - United States
+      - United States Minor Outlying Islands
+      - Uruguay
+      - Uzbekistan
+      - Vanuatu
+      - "Venezuela, Bolivarian Republic of"
+      - Viet Nam
+      - "Virgin Islands, British"
+      - "Virgin Islands, U.S."
+      - Wallis and Futuna
+      - Western Sahara
+      - Yemen
+      - Zambia
+      - Zimbabwe
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Data Owner Industry
+    options:
+      - Life Science / Healthcare
+      - Arts & Recreation
+      - Education & Training
+      - Environment
+      - Web3 / Crypto
+      - IT & Technology Services
+      - Professional Services (Legal, Consulting, Advising)
+      - Government
+      - Not-for-Profit
+      - Financial Services
+      - Utilities
+      - Resources, Agriculture & Fisheries
+      - Construction, Property & Real Estate
+      - Information, Media & Telecommunications
+      - Transport Services
+      - Other
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: Website
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Social Media
+    render: text
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Total amount of DataCap being requested
+    description: The maximum amount allowed is 5 PiB
+    options:
+      - 500TiB
+      - 1PiB
+      - 2PiB
+      - 3PiB
+      - 4PiB
+      - 5PiB
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Weekly allocation of DataCap requested
+    description: This amount is usually between 1 TiB and 1000 TiB
+    options:
+      - 10TiB
+      - 50TiB
+      - 100TiB
+      - 150TiB
+      - 200TiB
+      - 250TiB
+      - 300TiB
+      - 350TiB
+      - 400TiB
+      - 450TiB
+      - 500TiB
+      - 600TiB
+      - 700TiB
+      - 800TiB
+      - 900TiB
+      - 1PiB
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: On-chain address for first allocation
+    description: Make sure the address exists on the chain
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Custom multisig 
+    description: Mark this checkbox if this client should use a specific multisig (for fil+ gov team).
+    options:
+      - label: "Use Custom Multisig"  
+- type: input
+  attributes:
+    label: Identifier
+    description: If needed Filecoin team will fill up this field later on. You can skip this field.
+  validations:
+    required: false   
+- type: markdown
+  attributes:
+    value: |
+      # Project Details
+- type: textarea
+  attributes:
+    label: Share a brief history of your project and organization
+    render: text
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Is this project associated with other projects/ecosystem stakeholders?
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: If answered yes, what are the other projects/ecosystem stakeholders
+    render: text
+  validations:
+    required: false
+- type: markdown
+  attributes:
+    value: |
+      # Use-case Details
+- type: textarea
+  attributes:
+    label: Describe the data being stored onto Filecoin
+    render: text
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Where was the data currently stored in this dataset sourced from
+    options:
+      - AWS Cloud
+      - Google Cloud
+      - Azure Cloud
+      - My Own Storage Infra
+      - Other
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: If you answered "Other" in the previous question, enter the details here
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: How do you plan to prepare the dataset
+    multiple: true
+    options:
+      - IPFS
+      - lotus
+      - singularity
+      - graphsplit
+      - I don't know yet
+      - others/custom tool
+- type: input
+  attributes:
+    label: If you answered "other/custom tool" in the previous question, enter the details here
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Please share a sample of the data
+    description: A link to a file, an image, a table, etc., are good ways to do this.
+    render: text
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Confirm that this is a public dataset that can be retrieved by anyone on the Network
+    description: i.e., no specific permissions or access rights are required to view the data
+    options:
+      - label: I confirm
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: If you chose not to confirm, what was the reason
+    render: text
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: What is the expected retrieval frequency for this data
+    options:
+      - Daily
+      - Weekly
+      - Monthly
+      - Yearly
+      - Sporadic
+      - Never
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: For how long do you plan to keep this dataset stored on Filecoin
+    options:
+      - Less than 1 year
+      - 1 to 1.5 years
+      - 1.5 to 2 years
+      - 2 to 3 years
+      - More than 3 years
+      - Permanently
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: |
+      # DataCap Allocation Plan
+- type: dropdown
+  attributes:
+    label: In which geographies do you plan on making storage deals
+    multiple: true
+    options:
+      - Greater China
+      - Asia other than Greater China
+      - Africa
+      - North America
+      - South America
+      - Europe
+      - Australia (continent)
+      - Antarctica
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: How will you be distributing your data to storage providers
+    multiple: true
+    options:
+      - Cloud storage (i.e. S3)
+      - HTTP or FTP server
+      - IPFS
+      - Shipping hard drives
+      - Lotus built-in data transfer
+      - I don't know yet
+      - Others
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: How do you plan to choose storage providers
+    multiple: true
+    options:
+      - Slack
+      - Filmine
+      - Big data exchange
+      - Partners
+      - I don't know yet
+      - Others
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: If you answered "Others" in the previous question, what is the tool or platform you plan to use
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    render: text
+    label: If you already have a list of storage providers to work with, fill out their names and provider IDs below
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: How do you plan to make deals to your storage providers
+    multiple: true
+    options:
+      - Boost client
+      - Lotus client
+      - Bidbot
+      - Singularity
+      - I don't know yet
+      - Others/custom tool
+- type: input
+  attributes:
+    label: If you answered "Others/custom tool" in the previous question, enter the details here
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Can you confirm that you will follow the Fil+ guideline
+    description: Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap
+    options:
+      - "Yes"
+      - "No"
+  validations:
+    required: true
