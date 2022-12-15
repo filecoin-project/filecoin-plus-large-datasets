@@ -425,9 +425,10 @@ body:
       - graphsplit
       - I don't know yet
       - others/custom tool
-- type: input
+- type: textarea
   attributes:
     label: If you answered "other/custom tool" in the previous question, enter the details here
+    render: text
   validations:
     required: false
 - type: textarea
@@ -521,9 +522,10 @@ body:
       - Others
   validations:
     required: true
-- type: input
+- type: textarea
   attributes:
     label: If you answered "Others" in the previous question, what is the tool or platform you plan to use
+    render: text
   validations:
     required: false
 - type: textarea
@@ -543,9 +545,10 @@ body:
       - Singularity
       - I don't know yet
       - Others/custom tool
-- type: input
+- type: textarea
   attributes:
     label: If you answered "Others/custom tool" in the previous question, enter the details here
+    render: text
   validations:
     required: false
 - type: dropdown
