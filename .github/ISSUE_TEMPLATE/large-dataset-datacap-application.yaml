@@ -408,9 +408,10 @@ body:
       - Other
   validations:
     required: true
-- type: input
+- type: textarea
   attributes:
     label: If you answered "Other" in the previous question, enter the details here
+    render: text
   validations:
     required: false
 - type: dropdown
