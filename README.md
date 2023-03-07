@@ -73,6 +73,13 @@ This initiates a proposal to the multisig Notary to grant the associated amount 
   
 All notaries signing onto the LDN multisig are encouraged to track the client's use of previous DataCap allocations using on-chain information, data available on chain browsers, or on Fil+ specific dashboards like https://filplus.d.interplanetary.one/ or https://filplus.info/.
   
+## FVM Smart Contracts
+Smart contracts can acquire DataCap just like any regular client. To do so, simply enter the f410 address of the smart contract that requires DataCap as the client address when making a request.
+
+The process outlined above is for larger amounts of Datacap > 500 TiBs. For a smart contract's first DataCap allocation, we recommend using auto-verifier [Verify.glif.io](Verify.glif.io) to get 32 GiB of DataCap, as specified [here](https://docs.filecoin.io/store/filecoin-plus/overview/).
+
+It's important to note that DataCap allocations are a one-time credit for a Filecoin address and cannot be transferred between smart contracts. If you need to redeploy the smart contract, you must request additional DataCap. To improve this experience, we are developing an FRC to allow DataCap to be held between redeployments. 
+  
 ## Current status
 
 New applications are being accepted at this time, though please expect that the process will likely have some issues as we continue to test and improve the functionality of the process.
