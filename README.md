@@ -1,6 +1,8 @@
 # Filecoin Plus for large datasets
 
-This repo serves as the hub for client applications for DataCap at a large scale - currently defined as > 500 TiB of DataCap. If you wish to generally learn more about Filecoin Plus or apply for less than 500 TiB of DataCap, check out the following resources: 
+Filecoin Plus is a community program that aims to increase Filecoin's network by becoming the decentralized storage network for humanity's most important information. As the network continues to grow, we as a community need to make sure to maintain a civil online engagement. To learn more about acceptable community behavior please check the [Filecoin Community Code of Conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md).
+
+This repo serves as the hub for client applications for DataCap at a large scale - currently defined as > 100 TiB of DataCap. If you wish to generally learn more about Filecoin Plus or apply for less than 500 TiB of DataCap, check out the following resources: 
 
 - Filecoin Plus documentation: https://docs.filecoin.io/store/filecoin-plus/
 - Fil+ community governance repo: https://github.com/filecoin-project/notary-governance/
@@ -11,7 +13,7 @@ The process outlined below for clients looking to apply for a large amount of Da
 
 The main difference between this process and applying for DataCap directly from a notary (via filplus.storage) is that this process is (1) significantly more public, (2) DataCap is allocated from a large multisig Notary address, and (3) DataCap is allocated in tranches. 
 
-## Current scope
+## Current Scope
 
 Based on conversations in various issues and governance calls, here is the current scope of the Large Dataset Notary (LDN) program. You can find relevant issues, as well as links to governance call recordings in the [Notary Governance repo](https://github.com/filecoin-project/notary-governance). Please note that this is still an evolving conversation, so the scope is subject to change. If you would like to participate in this conversation or have feedback, please let us know! You can start a discussion topic in the [Notary Governance repo](https://github.com/filecoin-project/notary-governance/discussions), in the [fil-plus](https://filecoinproject.slack.com/archives/C01DLAPKDGX) public Slack channel, or in an upcoming [Governance call](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
@@ -20,10 +22,20 @@ Clients can currently apply for a **Large Dataset Notary** which can grant them 
 In order for a client and their dataset to be eligible: 
 
 - The dataset should be public, open, and mission aligned with Filecoin and Filecoin Plus. This also means that the data should be accessible to anyone in the network, without requiring any special permissions or access requirement. If this is not the case - consider instead going via the E-Fil+ pathway to getting DataCap. You can read more about that [here](https://efilplus.super.site/)
-- Stored data should be readily retrievable on the network and this can be regularly verified (though the use of manual or automated verification that includes retrieving data from various miners over the course of the DataCap allocation timeframe)
+
+- If a client wants to onboard more than 5+PiBs, the recommendation would be to start with a few applications and earn trust from the community. Having a positive reputation and proving to the community first by onboarding a smaller amount of data will help anyone who wants to onboard massive amounts of data much faster and smoother. 
+
+- Stored data should be readily retrievable on the network and this can be regularly verified (though the use of manual or automated verification that includes retrieving data from various miners over the course of the DataCap allocation timeframe). At this time all LDNs may have full retrievability, but it is not required. Each project should specify what portion of the data is retrievable and provide justification. From there notaries can decide during the due diligence phases if the client’s application is justifiable and can agree to sign it or not.
+
 - There should be no open disputes in the Fil+ ecosystem against the client during the time that the application is open for review
 
-- Best practice for storing large datasets includes ideally, storing it in 3 or more regions, with 4 or more storage provider operators or owners, and having at least 5 replicas of the dataset. No more than one replica should be stored with one SP ID, and if the data cannot leave a particular geographic boundary, then it is expected that replication will still happen across different locations (cities, datacenters, etc.). If you cannot follow these practices due to policy or any other issues, you may explain your case in the application and provide to the community what method you can do instead. These are recommendations and not strict rules that every client must follow.  
+- Best practice for storing large datasets includes ideally, storing it in 3 or more regions, with 4 or more storage provider operators or owners, and having at least 5 replicas of the dataset. No more than one replica should be stored with one SP ID, and if the data cannot leave a particular geographic boundary, then it is expected that replication will still happen across different locations (cities, datacenters, etc.). Each storage provider should not exceed 30% of the total datacap that the client was allocated and the storage provider should have published its public IP address. If you cannot follow these practices due to policy or any other issues, you may explain your case in the application and provide to the community what method you can do instead. These are recommendations and not strict rules that every client must follow.  
+
+- Regarding cases of abusing the program’s incentive structure, notaries should not be signing their own applications. For the program to work, each stakeholder will need to play their parts in a truthful manner. 
+
+- Datasets that have been stored previously, may be allowed to be copied over time on chain. This can provide value to the network if it is a new team, a new datacenter, and a new geopolitical region. However, storage providers should not be storing more than 20% of the duplicated data. While same datasets may help the network, this should not be a reason for client’s to onboard the same exact dataset repeatedly, client’s should  explicitly justify their reasoning on why the repeated dataset should be onboarded.
+
+- To help notaries more efficiently complete their due diligence process, clients should justify their reasoning of the amount of DataCap that you are applying for will help notaries with their due diligence process. Clients should explain how their dataset is useful for the network, and visible proof of the size of the data that is being onboarded.
 
 If you are a client who is interested in applying for a large DataCap allocation via an LDN, please see the steps outlined below.
 
