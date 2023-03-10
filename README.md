@@ -29,6 +29,8 @@ In order for a client and their dataset to be eligible:
 
 - There should be no open disputes in the Fil+ ecosystem against the client during the time that the application is open for review
 
+- With the current tooling and workflow, the recommendation would be to use a different address for every application. However, if you cannot, know that the workaround requires manual attention. We strongly do not recommend this due to delays created and mixed math for subsequent allocation issues. In the short term, we can support this. Please notify Simon Kim and add this to your LDN application if you absolutely have to go down this path and share why.
+
 - Best practice for storing large datasets includes ideally, storing it in 3 or more regions, with 4 or more storage provider operators or owners, and having at least 5 replicas of the dataset. No more than one replica should be stored with one SP ID, and if the data cannot leave a particular geographic boundary, then it is expected that replication will still happen across different locations (cities, datacenters, etc.). Each storage provider should not exceed 30% of the total datacap that the client was allocated and the storage provider should have published its public IP address. If you cannot follow these practices due to policy or any other issues, you may explain your case in the application and provide to the community what method you can do instead. These are recommendations and not strict rules that every client must follow.  
 
 - Regarding cases of abusing the program’s incentive structure, notaries should not be signing their own applications. For the program to work, each stakeholder will need to play their parts in a truthful manner. 
