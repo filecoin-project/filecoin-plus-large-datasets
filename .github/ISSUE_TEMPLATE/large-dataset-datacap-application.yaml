@@ -351,6 +351,15 @@ body:
     description: Make sure the address exists on the chain
   validations:
     required: true
+- type: dropdown
+  attributes:
+    label: Data Type of Application
+    options:    
+      - Slingshot
+      - Public, Open Dataset (Research/Non-Profit)
+      - Public, Open Commercial/Enterprise
+      - Private Commercial/Enterprise
+      - Private Non-Profit / Social impact
 - type: checkboxes
   attributes:
     label: Custom multisig 
