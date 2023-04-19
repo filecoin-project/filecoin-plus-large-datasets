@@ -430,6 +430,7 @@ body:
     options:
       - IPFS
       - lotus
+      - venus
       - singularity
       - graphsplit
       - I don't know yet
@@ -514,6 +515,7 @@ body:
       - IPFS
       - Shipping hard drives
       - Lotus built-in data transfer
+      - Venus built-in data transfer
       - I don't know yet
       - Others
   validations:
@@ -550,6 +552,7 @@ body:
     options:
       - Boost client
       - Lotus client
+      - Droplet client
       - Bidbot
       - Singularity
       - I don't know yet
