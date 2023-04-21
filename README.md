@@ -55,7 +55,7 @@ When clients use up > 75% of the prior DataCap allocation, a request for additio
 
 ## Application flow labels
 
-The following labels indicate the statues of LDN applications. The most recent version of these labels were released on April 15, 2023. More comprehensive release notes can be found in [this blog]. (https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702)
+The following labels indicate the statues of LDN applications. The most recent version of these labels were released on April 15, 2023. More comprehensive release notes can be found in [this blog](https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702).
 
 - **Validated**: 
   - The validated label is added to an issue when the parent comment of an LDN application is fully completed and all questions have been answered. 
