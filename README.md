@@ -53,6 +53,44 @@ Application flow:
 
 When clients use up > 75% of the prior DataCap allocation, a request for additional DataCap in the form of the next tranche is automatically kicked off (via the'subsequent allocation bot'). Notaries have access to on-chain data required to verify that the client is operating in good faith, in accordance with the principles of the program, and in line with their allocation strategy outlined in the original application. 2 notaries need to approve the next tranche of DataCap to be allocated to the client. The same notary cannot sign off on immediately subsequent allocations of DataCap, i.e., you need at minimum 4 unique notaries to support your application on an ongoing basis to receive multiple tranches of DataCap. 
 
+## Application flow labels
+
+The following labels indicate the statues of LDN applications. The most recent version of these labels were released on April 15, 2023. More comprehensive release notes can be found in [this blog]. (https://medium.com/filecoin-plus/ldn-label-update-part-1-label-consolidation-ae2691c78702)
+
+- **Validated**: 
+  - The validated label is added to an issue when the parent comment of an LDN application is fully completed and all questions have been answered. 
+  - When the validated label is added, a member of the governance team will review the application and post the trigger message. 
+  - This trigger message signifies to the SSA bot (subsequent allocation bot) to initiate the tranche allocation process, which will then post the request message.
+
+- **Ready to Sign**: 
+    - If the SSA bot detects the trigger message posted by the governance team or identifies that the client is low on previously granted DataCap (<25% of DataCap balance last granted), it will post a request message. 
+    - Once there is a request message, the ready to sign label should be added to the LDN application. 
+    - SSA bot detects the ready to sign label and notaries should be able to view the LDN application on the Fil+ registry (filplus.fil.org) for next steps.
+
+- **Start Sign Datacap**: 
+    - When the first notary, of the two notaries required, has completed their due diligence and has signed in support of the LDN application DataCap allocation tranche, the proposal message is posted. 
+    - The start sign datacap label is added to the issue when this proposal message is posted and the SSA bot detects it. 
+    - On the Fil+ registry, the status is updated to indicate that one notary has already supported the LDN application. The applicant now needs a second notary to sign the tranche to release DataCap.
+
+- **Granted**: 
+    - When a second notary has completed due diligence and signed in support of the LDN application’s DataCap tranche request, the approval message is posted.
+    - The granted label is added to the issue when this approval message is posted and the SSA bot detects it. 
+    - If successful, DataCap is issued for the granted allocation. The LDN application is removed from the list notaries see on the Filecoin Plus registry, until the next tranche is requested and the process repeats.
+
+- **Total DataCap Reached**: 
+    - The total datacap reached label is added when the client has reached the total amount of DataCap requested in the application.
+
+- **Error**: 
+    - Consolidation of what used to be a set of many error labels that indicate tooling errors. 
+    - An error message with more information about the error is posted in the issue. 
+    - The following is an example of an error message where the “Address” field is not specified in the “Approved Comment.”
+
+- **Governance Review Needed**: 
+    - Information provided by the applicant has changed, requiring a manual check from members focused on the client UX on the governance team.
+
+- **EFil+**: 
+    - Applications that are part of the E-Fil+ pipeline (read more at: https://efilplus.super.site/) will have this label.
+    
 ## DataCap tranche size calculations
 
 - First allocation: lesser of 5% of total DataCap requested or 50% of weekly allocation rate
