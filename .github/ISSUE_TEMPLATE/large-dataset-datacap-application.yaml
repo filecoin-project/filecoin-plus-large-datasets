@@ -19,6 +19,16 @@ body:
     required: true
 - type: dropdown
   attributes:
+    label: What is your role related to the dataset
+    options:
+      - Dataset Owner
+      - Storage provider filling out application on behalf of the data owner
+      - Data onramp entity that provides data onboarding services to multiple clients
+      - Other
+  validations:
+    required: true
+- type: dropdown
+  attributes:
     label: Data Owner Country/Region
     options:
       - Afghanistan
@@ -360,18 +370,14 @@ body:
       - Public, Open Commercial/Enterprise
       - Private Commercial/Enterprise
       - Private Non-Profit / Social impact
+  validations:
+    required: true
 - type: checkboxes
   attributes:
     label: Custom multisig 
-    description: Mark this checkbox if this client should use a specific multisig (for fil+ gov team).
+    description: Check this box off if you have explicitly been asked to by the governance team.
     options:
-      - label: "Use Custom Multisig"  
-- type: input
-  attributes:
-    label: Identifier
-    description: If needed Filecoin team will fill up this field later on. You can skip this field.
-  validations:
-    required: false   
+      - label: "Use Custom Multisig"    
 - type: markdown
   attributes:
     value: |
@@ -527,7 +533,7 @@ body:
     options:
       - Slack
       - Filmine
-      - Big data exchange
+      - Big Data Exchange
       - Partners
       - I don't know yet
       - Others
