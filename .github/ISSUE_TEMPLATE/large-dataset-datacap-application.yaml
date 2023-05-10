@@ -331,6 +331,17 @@ body:
       - 3PiB
       - 4PiB
       - 5PiB
+      - 6PiB
+      - 7PiB
+      - 8PiB
+      - 9PiB
+      - 10PiB
+      - 11PiB
+      - 12PiB
+      - 13PiB
+      - 14PiB
+      - 15PiB
+      - More Than 15PiB
   validations:
     required: true
 - type: dropdown
