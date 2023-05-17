@@ -345,12 +345,12 @@ body:
     required: true
 - type: input
   attributes:
-    label: What is the size of your dataset (One Copy)
+    label: Expected size of single dataset (one copy)
   validations:
     required: true
 - type: dropdown
   attributes:
-    label: Number of replicas required
+    label: Number of replicas to store
     options:
       - 1
       - 2
