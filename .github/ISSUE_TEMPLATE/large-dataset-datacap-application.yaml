@@ -362,7 +362,7 @@ body:
       - 8
       - 9
       - 10
- validations:
+  validations:
     required: true
 - type: dropdown
   attributes:
