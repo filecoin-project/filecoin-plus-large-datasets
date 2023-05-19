@@ -1,5 +1,7 @@
 name: Close Inactive Issues
 
+on:
+  workflow_dispatch:
 
 jobs:
   close_issues:
