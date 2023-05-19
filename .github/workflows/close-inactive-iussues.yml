@@ -1,37 +1,19 @@
-name: Close Inactive Issues
-
+name: 'Close inactive issues'
+#on:
+ #schedule:
+  #  - cron: '0 1 * * *'
 on:
   workflow_dispatch:
 
 jobs:
-  close_issues:
+  stale:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Close inactive issues
-        run: |
-          TOKEN="${{ secrets.GITHUB_TOKEN }}"
-          REPO="${{ github.repository }}"
-          OWNER="${{ github.repository_owner }}"
-          
-          echo "Checking for inactive issues..."
-          CLOSED_ISSUES=$(curl -s -X GET -H "Authorization: token $TOKEN" \
-            "https://api.github.com/repos/$OWNER/$REPO/issues?state=open" | \
-            jq 'map(select(.comments == 0 and .updated_at < (now - 14*24*60*60))) | .[].number')
-          
-          for ISSUE_NUMBER in $CLOSED_ISSUES; do
-            echo "Closing issue #$ISSUE_NUMBER..."
-            curl -s -X POST -H "Authorization: token $TOKEN" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "https://api.github.com/repos/$OWNER/$REPO/issues/$ISSUE_NUMBER/comments" \
-              -d '{"body":"This issue has been automatically closed due to inactivity."}'
-              
-            curl -s -X PATCH -H "Authorization: token $TOKEN" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "https://api.github.com/repos/$OWNER/$REPO/issues/$ISSUE_NUMBER" \
-              -d '{"state":"closed"}'
-          done
-          
-          echo "Inactive issues closed successfully."
+      - uses: actions/stale@v3
+        with:
+          stale-issue-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to re-open if this is relevant, or start a new application for DataCap anytime. Thank you!'
+          stale-pr-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to re-open if this is relevant, or start a new application for DataCap anytime. Thank you!'
+          close-issue-message: ''
+          days-before-stale: 14
+          days-before-close: 0
+          days-before-pr-close: -1
