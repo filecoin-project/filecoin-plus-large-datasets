@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/stale@v3
         with:
-          stale-issue-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to re-open if this is relevant, or start a new application for DataCap anytime. Thank you!'
-          stale-pr-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to re-open if this is relevant, or start a new application for DataCap anytime. Thank you!'
+          stale-issue-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to contact the Fil+ Gov team to re-open the application if it is still being processed. Thank you!'
+          stale-pr-message: 'This application has not seen any responses in the last 14 days, so for now it is being closed. Please feel free to contact the Fil+ Gov team to re-open the application if it is still being processed. Thank you!'
           close-issue-message: ''
           days-before-stale: 14
           days-before-close: 0
