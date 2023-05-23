@@ -409,7 +409,13 @@ body:
     label: Custom multisig 
     description: Check this box off if you have explicitly been asked to by the governance team.
     options:
-      - label: "Use Custom Multisig"    
+      - label: "Use Custom Multisig"
+- type: input
+  attributes:
+    label: Identifier
+    description: If needed Filecoin team will fill up this field later on. You can skip this field.
+  validations:
+    required: false
 - type: markdown
   attributes:
     value: |
