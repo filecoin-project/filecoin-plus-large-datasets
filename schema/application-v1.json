@@ -1,0 +1,76 @@
+{
+  "applicationVersion": 1,
+  "dataCapApplicationType": "da | ldn-v3 | e-fil",
+  "projectId": 1,
+  "datacapApplicant": "",
+  "applicationInfo": {
+    "coreInformation": {
+      "Data Owner Name": "",
+      "Data Owner Country/Region": "",
+      "Data Owner Industry": "",
+      "Website": 0,
+      "Social Media": ""
+    },
+    "projectDetails": {
+      "Share a brief history of your project and organization": "",
+      "Is this project associated with other projects/ecosystem stakeholders?": true,
+      "If answered yes, what are the other projects/ecosystem stakeholders": ""
+    },
+    "useCaseDetails": {
+      "Describe the data being stored onto Filecoin": "",
+      "Where was the data currently stored in this dataset sourced from": "AWS Cloud | Google Cloud | Azure Cloud | My Own Storage Infra | other",
+      "If you answered 'Other' in the previous question, enter the details here": "",
+      "How do you plan to prepare the dataset": "IPFS | Lotus | Singularity | Graphsplit | other/custom tool",
+      "If you answered 'other/custom tool' in the previous question, enter the details here": "",
+      "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "",
+      "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": true,
+      "If you chose not to confirm, what was the reason": "",
+      "What is the expected retrieval frequency for this data": "Daily | Weekly | Monthly | Yearly | Sporadic | Never",
+      "For how long do you plan to keep this dataset stored on Filecoin": "Less than a year | 1 to 1.5 years | 1.5 to 2 years | 2 to 3 years | More than 3 years | Permanently"
+    },
+    "datacapAllocationPlan": {
+      "In which geographies do you plan on making storage deals": [
+        
+      ],
+      "How will you be distributing your data to storage providers": "",
+      "How do you plan to choose storage providers": "",
+      "If you answered 'Other' in the previous question, what is the tool or platform you plan to use": "",
+      "If you already have a list of storage providers to work with, fill out their names and provider IDs below": "",
+      "How do you plan to make deals to your storage providers": "",
+      "If you answered 'Others/custom tool' in the previous question, enter the details here": "",
+      "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+    }
+  },
+  "applicationLifecycle": {
+    "validatedTime": 0,
+    "firstAllocationTime": 0,
+    "isActive": true,
+    "timeOfNewState": 0
+  },
+  "dataCapAllocations": [
+    {
+      "dataCapTranche": {
+        "uuid": 0,
+        "clientAddress": "f1...",
+        "timeOfRequest": 0,
+        "timeOfAllocation": 0,
+        "notaryAddress": "",
+        "allocationAmount": 0,
+        "signers": [
+          {
+            "signingAddress": "",
+            "timeOfSignature": 0,
+            "messageCID": ""
+          },
+          {
+            "signingAddress": "",
+            "timeOfSignature": 0,
+            "messageCID": ""
+          }
+        ],
+        "pr": 0,
+        "pr-cid": "bafy..."
+      }
+    }
+  ]
+}
