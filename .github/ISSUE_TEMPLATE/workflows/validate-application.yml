@@ -1,0 +1,23 @@
+name: JSON Validation
+
+on: 
+  pull_request:
+    paths:
+      - '**.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Validate JSON files
+      run: ./scripts/validate-json.sh
+      env:
+        GITHUB_BASE_REF: ${{ github.base_ref }}
