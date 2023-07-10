@@ -13,16 +13,16 @@
       "What is your role related to the dataset": "",
       "Total amount of DataCap being requested": {
         "amount": 0,
-        "unit": ""
+        "unit": "GiB | TiB | PiB"
       },
       "Expected size of single dataset (one copy)": {
         "amount": "",
-        "unit": ""
+        "unit": "GiB | TiB | PiB"
       },
       "Number of replicas to store": 0,
       "Weekly allocation of DataCap requested": {
         "amount": "",
-        "unit": ""
+        "unit": "GiB | TiB | PiB"
       },
       "On-chain address for first allocation": "",
       "Data Type of Application": "Slingshot | Public, Open Dataset (Research/Non-Profit) | Public, Open Commercial/Enterprise | Private Commercial/Enterprise | Private Non-Profit / Social impact",
