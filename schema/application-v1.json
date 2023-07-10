@@ -10,8 +10,8 @@
       "Data Owner Industry": "",
       "Website": 0,
       "Social Media": {
-        "amount": "handle",
-        "unit": "Type"
+        "handle": "",
+        "type": "Slack | Twitter | Facebook"
       },
       "What is your role related to the dataset": "",
       "Total amount of DataCap being requested": {
