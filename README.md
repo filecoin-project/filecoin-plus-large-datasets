@@ -138,13 +138,13 @@ New applications are being accepted at this time, though please expect that the 
 
 ## Retrieval Guidelines for Data Clients
 
-1. Data clients participating in the Fil+ program commit to ensuring the retrievability of open datasets by storing with SPs that serve HTTP retrievals with either [booster-http](https://boost.filecoin.io/http-retrieval/serving-files-with-booster-http) or their custom tooling.
-2. Fil+ data clients are advised to meticulously choose SPs that align with their specific data retrieval requirements.
-3. Fil+ clients can enhance their reputation by holding their SPs accountable for retrievability. This facilitates acquisition of additional DataCap from Notaries in the future.
-4. Fil+ Notaries consider the client’s track record on retrievability as part of their due diligence, and prioritize allocating DataCap to clients who store with SPs that serve reliable retrievals. 
-5. Multiple SPs can share a single unsealed copy of data with the same CID. This practice is deemed acceptable as it optimizes time and resource utilization.
-6. Data clients and SPs should be aware of the risk of network attacks, and mitigate these risks via rate limiting tools (e.g. set a max requests per second limit).
-7. Data clients and SPs should consider implementing a throttling limit that determines the maximum bandwidth a single retrieving client can consume at any given time.
-8. E Fil+ data clients storing private datasets should store with SPs that provide a level of retrievability consistent with the data clients’ retrieval needs indicated on the DataCap application.
-9. In the event of a large retrieval size, SPs should leverage tooling for load balancing to protect themselves.
-10. If the data client has very good (95-100%) retrievability track record via another retrieval method (GraphSync or BitSwap), then the data client might work with notaries to get future datacap approval on a case-by-case basis.
+1. Fil+ data clients are advised to meticulously choose SPs that align with their specific data retrieval requirements.
+2. Fil+ open dataset clients commit to ensuring the retrievability of open datasets by storing with SPs that serve HTTP retrievals with either [booster-http](https://boost.filecoin.io/http-retrieval/serving-files-with-booster-http) or their custom tooling.
+3. Fil+ clients can enhance their reputation by holding their SPs accountable for retrievability. This may streamline acquisition of additional DataCap in the future.
+4. Fil+ Notaries will consider the client’s track record on retrievability as part of their due diligence.
+5. Data clients and SPs should be aware of the risk of network attacks, and mitigate these risks via rate limiting tools (e.g. set a max requests per second limit).
+6. Data clients and SPs should consider implementing a throttling limit that determines the maximum bandwidth a single retrieving client can consume at any given time.
+7. Private data clients (E Fil+) should store with SPs that provide a level of retrievability consistent with the data clients’ retrieval needs indicated on the DataCap application.
+8. In the event of a large retrieval size, SPs should leverage tooling for load balancing to protect themselves.
+9. Multiple SPs can share a single unsealed copy of data with the same CID. This practice is deemed acceptable as it optimizes time and resource utilization.
+10. If the data client has very good (95-100%) retrievability track record via another retrieval method (GraphSync or BitSwap), then the data client may work with Notaries to get future DataCap approval on a case-by-case basis.
