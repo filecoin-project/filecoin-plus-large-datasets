@@ -25,7 +25,7 @@ In order for a client and their dataset to be eligible:
 
 - If a client wants to onboard more than 5+PiBs, the recommendation would be to start with a few applications and earn trust from the community. Having a positive reputation and proving to the community first by onboarding a smaller amount of data will help anyone who wants to onboard massive amounts of data much faster and smoother. 
 
-- Stored data should be readily retrievable on the network and this can be regularly verified (though the use of manual or automated verification that includes retrieving data from various miners over the course of the DataCap allocation timeframe). At this time all LDNs may have full retrievability, but it is not required. Each project should specify what portion of the data is retrievable and provide justification. From there notaries can decide during the due diligence phases if the client’s application is justifiable and can agree to sign it or not.
+- Stored data should be readily retrievable on the network and this can be regularly verified (though the use of manual or automated verification that includes retrieving data from various miners over the course of the DataCap allocation timeframe). Each project should specify what portion of the data is retrievable and provide justification. From there notaries can decide during the due diligence phases if the client’s application is justifiable and can agree to sign it or not.
 
 - There should be no open disputes in the Fil+ ecosystem against the client during the time that the application is open for review
 
@@ -138,10 +138,10 @@ New applications are being accepted at this time, though please expect that the 
 
 ## Retrieval Guidelines for Data Clients
 
-1. Data clients participating in the Fil+ program commit to ensuring the retrievability of open datasets through HTTP from their SPs.
+1. Data clients participating in the Fil+ program commit to ensuring the retrievability of open datasets by storing with SPs that serve HTTP retrievals with either [booster-http](https://boost.filecoin.io/http-retrieval/serving-files-with-booster-http) or their custom tooling.
 2. Fil+ data clients are advised to meticulously choose SPs that align with their specific data retrieval requirements.
 3. Fil+ clients can enhance their reputation by holding their SPs accountable for retrievability. This facilitates acquisition of additional DataCap from Notaries in the future.
-4. Fil+ Notaries consider the client’s track record on retrievability as part of their due diligence, and prioritize allocating DataCap to clients who actively engage in data retrieval.
+4. Fil+ Notaries consider the client’s track record on retrievability as part of their due diligence, and prioritize allocating DataCap to clients who store with SPs that serve reliable retrievals. 
 5. Multiple SPs can share a single unsealed copy of data with the same CID. This practice is deemed acceptable as it optimizes time and resource utilization.
 6. Data clients and SPs should be aware of the risk of network attacks, and mitigate these risks via rate limiting tools (e.g. set a max requests per second limit).
 7. Data clients and SPs should consider implementing a throttling limit that determines the maximum bandwidth a single retrieving client can consume at any given time.
