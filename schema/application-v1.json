@@ -9,7 +9,10 @@
       "Data Owner Country/Region": "",
       "Data Owner Industry": "",
       "Website": 0,
-      "Social Media": "",
+      "Social Media": {
+        "handle": "",
+        "type": "Slack | Twitter | Facebook"
+      },
       "What is your role related to the dataset": "",
       "Total amount of DataCap being requested": {
         "amount": 0,
