@@ -469,7 +469,7 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: Are you a data preparer? What is your previous experience as a data-preparer? List previous applications and client IDs?
+    label: How will the data be prepared? Please include tooling used and technical details?
     render: text
   validations:
     required: false
