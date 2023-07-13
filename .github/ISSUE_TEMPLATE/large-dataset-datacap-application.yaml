@@ -497,24 +497,6 @@ body:
     render: text
   validations:
     required: false
-- type: dropdown
-  attributes:
-    label: How do you plan to prepare the dataset
-    multiple: true
-    options:
-      - IPFS
-      - lotus
-      - venus
-      - singularity
-      - graphsplit
-      - I don't know yet
-      - others/custom tool
-- type: textarea
-  attributes:
-    label: If you answered "other/custom tool" in the previous question, enter the details here
-    render: text
-  validations:
-    required: false
 - type: textarea
   attributes:
     label: Please share a sample of the data
