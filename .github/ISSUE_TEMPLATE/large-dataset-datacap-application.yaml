@@ -469,12 +469,6 @@ body:
     required: false
 - type: textarea
   attributes:
-    label: How will the data be prepared? Please include tooling used and technical details?
-    render: text
-  validations:
-    required: false
-- type: textarea
-  attributes:
     label: If you are a data preparer. What is your location (City and Country) 
     render: text
   validations:
