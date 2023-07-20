@@ -467,21 +467,27 @@ body:
     render: text
   validations:
     required: false
-- type: dropdown
-  attributes:
-    label: How do you plan to prepare the dataset
-    multiple: true
-    options:
-      - IPFS
-      - lotus
-      - venus
-      - singularity
-      - graphsplit
-      - I don't know yet
-      - others/custom tool
 - type: textarea
   attributes:
-    label: If you answered "other/custom tool" in the previous question, enter the details here
+    label: If you are a data preparer. What is your location (City and Country) 
+    render: text
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: If you are a data preparer, how will the data be prepared? Please include tooling used and technical details?
+    render: text
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: If you are not preparing the data, who will prepare the data?  (Provide name and business)
+    render: text
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Has this dataset been stored on the Filecoin network before? If so, please explain and make the case why you would like to store this dataset again to the network. Provide details on preparation and/or SP distribution.
     render: text
   validations:
     required: false
