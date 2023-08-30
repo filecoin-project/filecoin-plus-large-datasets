@@ -47,7 +47,7 @@ export async function checkThrottling(octokit) {
 
   if (remaining < RATE_REMAINING_LIMIT) {
     const timestampNow = new Date().getTime()
-    const timestampReset = rateLimitStatus.data.rate.reset * 1000
+    const timestampReset = (rateLimitStatus.data.rate.reset + 10) * 1000
     const sleepTime = (timestampReset - timestampNow)
 
     const sleepTimeStringInMinutesAndSeconds = new Date(sleepTime).toISOString().substr(14, 5);
