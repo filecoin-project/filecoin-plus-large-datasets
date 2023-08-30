@@ -4,7 +4,7 @@ import { Octokit } from "@octokit/rest";
 import fetch from "node-fetch";
 import { checkThrottling, getLastComment } from "./utils.mjs";
 
-const DAYS_TO_WAIT = 14;
+const DAYS_TO_WAIT = 18; // Changed from 14 to 18 for the first 4 days of the new bot.
 const owner = process.env.GITHUB_REPOSITORY.split('/')[0];
 const repo = process.env.GITHUB_REPOSITORY.split('/')[1];
 
