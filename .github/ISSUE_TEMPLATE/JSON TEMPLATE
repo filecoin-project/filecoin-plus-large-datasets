@@ -1,0 +1,49 @@
+ applicationVersion: 1,
+  dataCapApplicationType: da | ldn-v3 | e-fil,
+  projectId: 1,
+  "datacapApplicant": "",
+  "applicationInfo": {
+    "coreInformation": {
+      "Data Owner Name": "",
+      "Data Owner Country/Region": "",
+      "Data Owner Industry": "",
+      "Website": 0,
+      "Social Media": {
+        "handle": "",
+        "type": "Slack | Twitter | Facebook"
+      },
+      "What is your role related to the dataset": "",
+      "Total amount of DataCap being requested": {
+        "amount": 0,
+        "unit": "GiB | TiB | PiB"
+      },
+      "Expected size of single dataset (one copy)": {
+        "amount": "",
+        "unit": "GiB | TiB | PiB"
+      },
+      "Number of replicas to store (minimum 4)": 0,
+      "Weekly allocation of DataCap requested": {
+        "amount": "",
+        "unit": "GiB | TiB | PiB"
+      },
+      ""On-chain address (Note that you will not be able to change this in the future and that you should have a unique address for each LDN application)": "",
+      "Data Type of Application": "Slingshot | Public, Open Dataset (Research/Non-Profit) | Public, Open Commercial/Enterprise | Private Commercial/Enterprise | Private Non-Profit / Social impact",
+      "Custom multisig": ""
+    },
+    "projectDetails": {
+      "Share a brief history of your project and organization": "",
+      "Is this project associated with other projects/ecosystem stakeholders?": true,
+      "If answered yes, what are the other projects/ecosystem stakeholders": ""
+    },
+    "useCaseDetails": {
+      "Describe the data being stored onto Filecoin": "",
+      "Where was the data currently stored in this dataset sourced from": "AWS Cloud | Google Cloud | Azure Cloud | My Own Storage Infra | other",
+      "If you answered 'Other' in the previous question, enter the details here": "",
+      "How do you plan to prepare the dataset": "IPFS | Lotus | Singularity | Graphsplit | other/custom tool",
+      "If you answered 'other/custom tool' in the previous question, enter the details here": "",
+      "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "",
+      "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": true,
+      "If you chose not to confirm, what was the reason": "",
+      "What is the expected retrieval frequency for this data": "Daily | Weekly | Monthly | Yearly | Sporadic | Never",
+      "For how long do you plan to keep this dataset stored on Filecoin": "Less than a year | 1 to 1.5 years | 1.5 to 2 years | 2 to 3 years | More than 3 years | Permanently"
+    }
