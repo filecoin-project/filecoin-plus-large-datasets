@@ -1,3 +1,16 @@
+# Archived July 2024
+With the deprecation of the large dataset notary program, we are archiving this repo. For Fil+ Allocator Governance discussions, see this [Governance repo](https://github.com/filecoin-project/Allocator-Governance/). For the registry of active allocators, see this [Allocator Registry repo](https://github.com/filecoin-project/Allocator-Registry)
+
+To view other updated reference links for the Fil+ program, please see:
+
+- For information on the open and pending DataCap deals, please see [FIDL's Allocator.tech](https://allocator.tech/).
+- For information on support issues or a listing of all current Allocators, please see [Allocator Registry repo](https://github.com/filecoin-project/Allocator-Registry)
+- For getting in touch, please reach out in [SLACK](https://filecoin.io/slack)
+- Bi-weekly recorded Fil+ governance meetings on [Youtube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN)
+
+
+
+
 # Filecoin Plus for large datasets
 
 Filecoin Plus is a community program that aims to increase Filecoin's network by becoming the decentralized storage network for humanity's most important information. As the network continues to grow, we as a community need to make sure to maintain a civil online engagement. To learn more about acceptable community behavior please check the [Filecoin Community Code of Conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md).
